@@ -38,7 +38,7 @@ def demo():
   print(response["choices"][0]["message"]["content"])
 
 
-def make_request_vllm(content):
+def make_request(content, type = 'vllm'):
     prompt = TRANSLATE_TEMPLATE.replace("{text}", content)
     data = {
     "model": "Qwen/Qwen3-8B-AWQ",
@@ -52,31 +52,15 @@ def make_request_vllm(content):
     "presence_penalty": 1.5,
     "chat_template_kwargs": {"enable_thinking": False}
   }
+    url = vllm_url if type == 'vllm' else gguf_url
+    inference_time = 0
     try: 
-      response = requests.post(gguf_url, json=data).json()
-      return {"prompt": prompt, "content": response["choices"][0]["message"]["content"]}
+      start = time.perf_counter()
+      response = requests.post(url, json=data).json()
+      inference_time = time.perf_counter() - start
+      return {"prompt": prompt, "content": response["choices"][0]["message"]["content"], "inference_time": inference_time}
     except Exception as e:
-       return {"prompt": prompt, "content": e}
-
-def make_request_gguf(content):
-    prompt = TRANSLATE_TEMPLATE.replace("{text}", content)
-    data = {
-    "model": "Qwen/Qwen3-8B-AWQ",
-    "messages": [
-      {"role": "system", "content": SYSTEM_PROMPT},
-      {"role": "user", "content": prompt}
-    ],
-    "temperature": 0.7,
-    "top_p": 0.8,
-    "top_k": 20,
-    "presence_penalty": 1.5,
-    "chat_template_kwargs": {"enable_thinking": False}
-  }
-    try: 
-      response = requests.post(gguf_url, json=data).json()
-      return {"prompt": prompt, "content": response["choices"][0]["message"]["content"]}
-    except Exception as e:
-       return {"prompt": prompt, "content": e}
+       return {"prompt": prompt, "content": e, inference_time: inference_time}
 
 ccu_contents = [
   "Quãng năm 2017, khi 35 tuổi, tôi bắt đầu",
@@ -159,51 +143,53 @@ def parallel_requests(contents, type='vllm'):
   start = time.perf_counter()
   with ThreadPoolExecutor(max_workers=n_threads) as executor:
     for content in contents:
-        if type == 'vllm':
-            processes.append(executor.submit(make_request_vllm, content))
-        else:   
-          processes.append(executor.submit(make_request_gguf, content))
+        processes.append(executor.submit(make_request, content, type))
 
+  generated_contents = []
   for task in as_completed(processes):
       result = task.result()
-      output = result["content"]
+      generated_contents.append(result["content"])
+  elapsed = time.perf_counter() - start
+    
+  for output in generated_contents:
       try:
         output_tokens = len(tokenizer.encode(output, add_special_tokens=False))
       except Exception as e:
         output_tokens = 0
         print(f"Error encoding output: {e}")
       total_output_tokens += output_tokens
-      print(result)
+      print(output)
       print("-" * 50)
 
-  elapsed = time.perf_counter() - start
   print(f"Total generated tokens: {total_output_tokens}")
   print(f"Tokens per second (parallel): {total_output_tokens / elapsed:.2f} tokens/s")
   print("Total times to handle {} requests with {} concurrent threads: {} s".format(n_requests, n_threads, elapsed))
+  print(f"Successfully handled {len(generated_contents)} requests.")
 
 def one_request_at_once(contents, type='vllm'):
-  start = time.perf_counter()
   min_len = 10000
   max_len = -1
-  avg_len = 0
+  total_generated_tokens = 0
+  total_time = 0
+
   for content in contents:
-    if type == 'vllm':
-      result = make_request_vllm(content)
-    else:
-      result = make_request_gguf(content)
+    result = make_request(content, type)
+    total_time += result["inference_time"]
     # num_words = len(result["content"].split(" "))
     num_tokens = len(tokenizer.encode(result["content"], add_special_tokens=False))
     if num_tokens < min_len: min_len = num_tokens
     if num_tokens > max_len: max_len = num_tokens
-    avg_len += num_tokens
+    total_generated_tokens += num_tokens
     print(result)
     print("-"*50)
   
-  total_time = time.perf_counter() - start
-  avg_len /= len(contents)
-  print("Average generated num_tokens: {}".format(avg_len))
+  avg_generated_token = total_generated_tokens/len(contents)
+  print("Average generated num_tokens: {}".format(avg_generated_token))
   print("Min generated num_tokens: {}, Max generated num_tokens: {}".format(min_len, max_len))
   
+  print("-"*50)
+  print("Total generated num_tokens: {}".format(total_generated_tokens))
+  print("Tokens per second (one by one): {:.2f} tokens/s".format(total_generated_tokens / total_time))
   print("Total times to handle {} requests one by one: {} s".format(len(contents), total_time))
   print("Average time per request: {} s".format(total_time / len(contents)))
 
