@@ -1,0 +1,82 @@
+{
+  "batch_1": [
+    "Chúng ta sẽ họp để phân tích doanh thu, lợi nhuận và chi phí từng khu vực trong quý II vừa qua.",
+    "Buổi họp hôm nay nhằm cập nhật tiến độ phát triển tính năng mới trên hệ thống quản lý khách hàng CRM.",
+    "Chúng ta cần trao đổi về ý tưởng, ngân sách và KPI cho chiến dịch quảng bá sản phẩm sắp tới.",
+    "Buổi họp sẽ xoay quanh các vị trí cần tuyển gấp và kế hoạch đào tạo nhân viên mới trong quý tới.",
+    "Chúng ta cùng rà soát các hạng mục đang bị chậm tiến độ trong dự án triển khai hệ thống quản trị ERP.",
+    "Cuộc họp hôm nay tập trung vào việc phân tích phản hồi từ khách hàng trong đợt khảo sát tháng bảy.",
+    "Chúng ta sẽ bàn về việc mở rộng thị trường sang miền Trung và những rủi ro có thể xảy ra.",
+    "Mục tiêu hôm nay là xác định các điểm nghẽn trong quy trình nội bộ và đề xuất hướng cải tiến."
+  ],
+  "batch_2": [
+    "Doanh thu khu vực miền Nam tăng mạnh 15%, trong khi chi phí vận hành cũng tăng nhẹ do mở rộng đội ngũ.",
+    "Nhóm backend đã hoàn thành hơn 80% khối lượng công việc, hiện đang triển khai kiểm thử chức năng API.",
+    "Ngân sách quảng cáo đang được điều chỉnh lại để phù hợp với chiến lược truyền thông mới trong quý sau.",
+    "Chúng ta đã tiếp cận được 6 ứng viên tiềm năng và cần chốt lịch phỏng vấn cho tuần tới.",
+    "Nhà cung cấp phần cứng vẫn chưa giao đủ thiết bị khiến dự án ERP bị chậm khoảng một tuần.",
+    "Phản hồi phổ biến nhất từ khách hàng là về tốc độ phản hồi của nhân viên CSKH qua kênh live chat.",
+    "Kế hoạch tài chính cần thêm phương án dự phòng trong trường hợp doanh số không đạt như kỳ vọng.",
+    "Phòng vận hành và phòng kỹ thuật cần phối hợp để chuẩn hoá quy trình xử lý sự cố kỹ thuật."
+  ],
+  "batch_3": [
+    "Miền Trung là khu vực duy nhất vượt chỉ tiêu doanh thu 130%, cần học hỏi chiến lược bán hàng của họ.",
+    "Tính năng lọc nâng cao theo từ khoá, tag và ngày tạo sẽ được ra mắt cuối tháng tám.",
+    "Việc sử dụng KOL và influencer trong chiến dịch có thể giúp tăng độ nhận diện thương hiệu hiệu quả.",
+    "Thời gian onboard trung bình của nhân viên mới đang là 12 ngày, cần rút ngắn còn dưới 8 ngày.",
+    "PM cần phối hợp chặt chẽ hơn với đối tác để đẩy nhanh tiến độ xây dựng server mới cho văn phòng Đà Nẵng.",
+    "Tỉ lệ hài lòng của khách hàng tăng 5%, đạt mức 94% nhờ cải thiện thời gian phản hồi yêu cầu.",
+    "Biên lợi nhuận có xu hướng giảm nhẹ do chi phí logistics và nguyên vật liệu đầu vào đều tăng cao.",
+    "Cần xây dựng hệ thống OKR rõ ràng hơn để toàn bộ nhân viên hướng đến mục tiêu chung của công ty."
+  ],
+  "batch_4": [
+    "Chi phí vận hành tăng chủ yếu do tăng nhân sự và mở rộng quy mô hoạt động ở khu vực miền Bắc.",
+    "Frontend hiện gặp lỗi tương thích với trình duyệt Safari, cần gấp rút fix trước khi ra mắt bản beta.",
+    "Ngân sách marketing tháng tới nhiều khả năng sẽ bị cắt giảm 15% để ưu tiên ngân sách vận hành.",
+    "Đề xuất tổ chức workshop nội bộ nhằm chia sẻ kiến thức và cải thiện năng lực chuyên môn cho nhân viên.",
+    "Đơn vị cung cấp thiết bị đã xác nhận giao hàng đầy đủ vào sáng thứ Năm tuần này.",
+    "Nhóm CSKH cần cập nhật thêm các kịch bản xử lý phản ánh tiêu cực từ khách hàng lớn.",
+    "Bộ phận tài chính sẽ tổng hợp báo cáo chi tiết chi phí từng phòng ban trong vòng 3 ngày tới.",
+    "Phòng vận hành đề xuất tổ chức họp liên phòng để xử lý triệt để các xung đột về quy trình hiện tại."
+  ],
+  "batch_5": [
+    "Chúng ta thống nhất giữ nguyên mức thưởng doanh số như quý trước để đảm bảo động lực cho nhân viên.",
+    "A/B testing cho thấy giao diện mới giúp tăng tỷ lệ chuyển đổi lên 15%, nên ưu tiên triển khai phương án B.",
+    "Tỉ lệ click của email marketing vẫn dưới 2%, nội dung chưa thu hút và tiêu đề cần được cải thiện thêm.",
+    "Hệ thống chấm công mới tích hợp API với phần mềm HRM hiện tại, giúp tiết kiệm đáng kể thời gian xử lý.",
+    "Thời gian downtime trung bình hàng tháng đang ở mức 3 giờ, vẫn nằm trong phạm vi SLA đã cam kết.",
+    "Nhiều khách hàng đề nghị bổ sung tính năng lưu đơn hàng đang xử lý để mua lại sau.",
+    "Thị trường phía Bắc đang có thêm nhiều đối thủ cạnh tranh với mức giá thấp hơn đáng kể.",
+    "Một nhóm taskforce sẽ được lập ra để rà soát toàn bộ quy trình nội bộ và đề xuất cải tiến cần thiết."
+  ],
+  "batch_6": [
+    "KPI quý II nhìn chung đạt mục tiêu đề ra, tuy nhiên vẫn cần theo dõi sát sao các chỉ số chi tiết hơn.",
+    "Giao diện người dùng bản mới sẽ được demo trực tiếp trong buổi họp nhóm kỹ thuật tuần sau.",
+    "Chi phí quảng cáo vượt ngân sách 12% do phát sinh thêm các chiến dịch remarketing không được dự báo trước.",
+    "Một số nhân viên phản ánh thiếu tài liệu kỹ thuật dẫn đến mất thời gian tự mày mò khi làm việc.",
+    "Trạm máy chủ tại Đà Nẵng đã khởi động lại thành công sau khi khắc phục sự cố mất điện bất ngờ.",
+    "Cần báo cáo chi tiết thời gian xử lý của từng loại yêu cầu để cải thiện hiệu quả vận hành.",
+    "Nếu doanh số tháng tới không cải thiện, công ty sẽ phải xem xét điều chỉnh lại định vị sản phẩm.",
+    "Ban điều hành đề xuất áp dụng quy trình kiểm tra định kỳ giữa các bộ phận để đảm bảo chất lượng dịch vụ."
+  ],
+  "batch_7": [
+    "Tất cả báo cáo tổng hợp sẽ được gửi về cho ban lãnh đạo trước 17h thứ Sáu tuần này.",
+    "Tính năng upload file dung lượng lớn vẫn chưa ổn định, cần kiểm tra thêm trên môi trường staging.",
+    "Đề xuất chia ngân sách quảng cáo theo từng vùng địa lý dựa trên dữ liệu tăng trưởng năm ngoái.",
+    "Tài liệu onboarding sẽ được cập nhật lại theo phản hồi mới từ nhóm nhân sự và nhóm kỹ thuật.",
+    "Chi phí bảo trì hệ thống giảm 10% so với năm trước nhờ thay đổi đối tác cung cấp dịch vụ.",
+    "Thời gian trung bình để xử lý một khiếu nại là khoảng 6 giờ, vẫn cao hơn chỉ tiêu đề ra.",
+    "Cần đánh giá lại hợp đồng kho vận hiện tại vì chi phí tăng nhưng hiệu suất không cải thiện.",
+    "Phòng vận hành nên chuẩn hóa biểu mẫu báo cáo hằng tuần để dễ dàng theo dõi tiến độ hơn."
+  ],
+  "batch_8": [
+    "Kết luận: cần đầu tư thêm vào năng lực phân tích dữ liệu để hỗ trợ ra quyết định nhanh và chính xác hơn.",
+    "Nhóm kỹ thuật sẽ gửi pull request chính thức sau khi hoàn tất các bước kiểm thử QA vào chiều mai.",
+    "Chiến dịch cần tập trung nhiều hơn vào yếu tố cảm xúc để tạo kết nối với khách hàng mục tiêu.",
+    "HR sẽ tiến hành khảo sát mức độ hài lòng của nhân viên mỗi quý để theo dõi chỉ số gắn bó.",
+    "Buổi họp tuần tới sẽ đi sâu hơn vào lộ trình phát triển kỹ năng chuyên môn cho nhóm sản phẩm.",
+    "Đội hỗ trợ kỹ thuật đã sắp xếp trực ca đêm để hỗ trợ khách hàng trong khung giờ cao điểm.",
+    "Sau khi ra mắt, nên tổ chức khảo sát người dùng để đánh giá mức độ hài lòng về sản phẩm.",
+    "Cần xây dựng cơ chế kiểm tra chéo giữa các bộ phận để giảm thiểu sai sót trong quy trình chung."
+  ]
+}

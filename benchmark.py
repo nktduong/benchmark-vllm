@@ -1,6 +1,7 @@
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
+import json
 
 gguf_url = "https://boxing-grand-webmaster-pictures.trycloudflare.com/v1/chat/completions"
 vllm_url = "http://100.109.59.128:8000/v1/chat/completions"
@@ -24,19 +25,17 @@ def demo():
   vllm_data = {
     "model": "Qwen/Qwen3-8B-AWQ",
     "messages": [
-      {"role": "user", "content": "Give me a short introduction to large language models."}
+      {"role": "user", "content": "Give me a short introduction to large language models./no-think"}
     ],
     "temperature": 0.7,
     "top_p": 0.8,
     "top_k": 20,
     "presence_penalty": 1.5,
-    "chat_template_kwargs": {"enable_thinking": False}
   }
 
   response = requests.post(vllm_url, json=vllm_data).json()
 
   print(response["choices"][0]["message"]["content"])
-
 
 def make_request(content, type = 'vllm'):
     prompt = TRANSLATE_TEMPLATE.replace("{text}", content)
@@ -50,7 +49,6 @@ def make_request(content, type = 'vllm'):
     "top_p": 0.8,
     "top_k": 20,
     "presence_penalty": 1.5,
-    "chat_template_kwargs": {"enable_thinking": False}
   }
     url = vllm_url if type == 'vllm' else gguf_url
     inference_time = 0
@@ -60,7 +58,8 @@ def make_request(content, type = 'vllm'):
       inference_time = time.perf_counter() - start
       return {"prompt": prompt, "content": response["choices"][0]["message"]["content"], "inference_time": inference_time}
     except Exception as e:
-       return {"prompt": prompt, "content": e, inference_time: inference_time}
+       print("Error during request:", e)
+       return {"prompt": prompt, "content": "", "inference_time": inference_time}
 
 ccu_contents = [
   "Quãng năm 2017, khi 35 tuổi, tôi bắt đầu",
@@ -73,14 +72,16 @@ ccu_contents = [
   "Điều đáng nói đây không phải là nội dung sở trường của cô bé."
 ]
 meeting_contents = [
+  "Mình sẽ đến trường để học trực tiếp.",
   "Bây giờ nhà trường muốn nghe ý kiến phản hồi từ phụ huynh.",
   "Phục lớp mình thì ngày hôm qua giáo viên chủ nhiệm đã điều tra là lớp mình đã có.",
   "Phụ huynh cũng nhất trí cho các cháu đến trường trong cái tình hình như vậy thì em cũng đồng ý thôi Nhưng mà còn những cái phụ huynh nào mà băn khoăn như em ấy, thì em cũng muốn nghe ý kiến của các phụ huynh như thế nào",
   "Rồi mà chưa có được. Dạ, em chỉ lo lắng cái khoản đó thôi. Dạ, mặc dù em biết là học online thì cũng không có cái cái kết quả là nó không được cao và học trực tiếp ở trường. Nhưng mà với cái tình hình dịch bệnh như này thì thật sự là không yên tâm chút nào nữa.",
   "Cái bảng điểm giáo viên chủ nhiệm vừa gởi đến cho phụ huynh rồi, phụ huynh có thể mở ra xem.",
   "Bây giờ, trong ở đây, lớp mình bây giờ đã có 26 phụ huynh.",
+  "Không chính xác, chưa kể là các con kiến thức các con mà ở trên lớp cũng các con nghe giảng đâu có biết các con nghe giảng đâu.",
 ]
-contents = [
+large_batch_contents = [
     "Mình sẽ đến trường để học trực tiếp.",
     "Bây giờ nhà trường muốn nghe ý kiến phản hồi từ phụ huynh.",
     "Phục lớp mình thì ngày hôm qua giáo viên chủ nhiệm đã điều tra là lớp mình đã có.",
@@ -98,7 +99,6 @@ contents = [
     "Bây giờ, xin mời ý kiến của các phụ huynh khác, để mình có cái hướng bàn bạc tốt nhất cho con em mình.",
     "Được, còn phụ huynh nào nữa không ạ?",
     "Dạ rồi, chờ tí xíu ạ.",
-    "Xong mình sẽ sẽ ghi cô giáo chủ nhiệm sẽ ghi lại tất cả ý kiến phụ huynh là cô giáo chủ nhiệm từ từ giải đáp ạ, dạ.",
     "Ta xác định là mình sẽ sống chung với dịch.",
     "Các con online, các con search trên mạng là có đầy đủ là có hết trên mạng.",
     "Có hết trên mạng nên giống như.",
@@ -134,7 +134,7 @@ one_sentence = [
    "Nên là mình phải biết được là ở đó nó xưng hô như thế nào và cái thời gian, cái thời gian để làm chi để khi mà mình sắp xếp đi tới đó nó phải đúng giờ, nó đừng có bị trễ địa điểm, địa điểm thì phải biết nó xa hay nó gần. Sẽ biết được là trong cái bữa cơm của gia đình á, nó sẽ có những người như thế nào rồi? Mình phải tìm hiểu những cái người đó để giống như là."
 ]
 
-def parallel_requests(contents, type='vllm'):
+def parallel_requests(contents, type='vllm', log_result=False):
   processes = []
   n_requests = len(contents)
   n_threads = n_requests
@@ -148,6 +148,9 @@ def parallel_requests(contents, type='vllm'):
   generated_contents = []
   for task in as_completed(processes):
       result = task.result()
+      if log_result:
+        print(result)
+        print("-"*50)
       generated_contents.append(result["content"])
   elapsed = time.perf_counter() - start
     
@@ -158,15 +161,13 @@ def parallel_requests(contents, type='vllm'):
         output_tokens = 0
         print(f"Error encoding output: {e}")
       total_output_tokens += output_tokens
-      print(output)
-      print("-" * 50)
 
   print(f"Total generated tokens: {total_output_tokens}")
   print(f"Tokens per second (parallel): {total_output_tokens / elapsed:.2f} tokens/s")
   print("Total times to handle {} requests with {} concurrent threads: {} s".format(n_requests, n_threads, elapsed))
   print(f"Successfully handled {len(generated_contents)} requests.")
 
-def one_request_at_once(contents, type='vllm'):
+def one_request_at_once(contents, type='vllm', log_result=False):
   min_len = 10000
   max_len = -1
   total_generated_tokens = 0
@@ -175,13 +176,13 @@ def one_request_at_once(contents, type='vllm'):
   for content in contents:
     result = make_request(content, type)
     total_time += result["inference_time"]
-    # num_words = len(result["content"].split(" "))
     num_tokens = len(tokenizer.encode(result["content"], add_special_tokens=False))
     if num_tokens < min_len: min_len = num_tokens
     if num_tokens > max_len: max_len = num_tokens
     total_generated_tokens += num_tokens
-    print(result)
-    print("-"*50)
+    if log_result:
+      print(result)
+      print("-"*50)
   
   avg_generated_token = total_generated_tokens/len(contents)
   print("Average generated num_tokens: {}".format(avg_generated_token))
@@ -193,14 +194,11 @@ def one_request_at_once(contents, type='vllm'):
   print("Total times to handle {} requests one by one: {} s".format(len(contents), total_time))
   print("Average time per request: {} s".format(total_time / len(contents)))
 
-if __name__ == "__main__":
+def calculate_prompt_tokens(contents):
   min_len = 10000
   max_len = -1
   avg_len = 0
-
-  contents = contents
   for content in contents:
-    # num_tokens = len(TRANSLATE_TEMPLATE.replace("{text}", content).split(" "))
     num_tokens = len(tokenizer.encode(TRANSLATE_TEMPLATE.replace("{text}", content), add_special_tokens=False))
     if num_tokens < min_len: min_len = num_tokens
     if num_tokens > max_len: max_len = num_tokens
@@ -209,7 +207,25 @@ if __name__ == "__main__":
   print("Average prompt num_tokens: {}".format(avg_len))
   print("Min prompt num_tokens: {}, Max prompt num_tokens: {}".format(min_len, max_len))
 
-  # one_request_at_once(contents, type='gguf')
-  # one_request_at_once(contents, type='vllm')
-  # parallel_requests(contents, type='vllm')
-  parallel_requests(contents, type='gguf')  
+if __name__ == "__main__":
+  inference_type = 'gguf' # 'vllm' or 'gguf'
+  request_handle = 'parallel'  # 'one_by_one' or 'parallel'
+  test_local = False # Set to True if testing locally, False for remote server
+  log_result = False # Set to True to log each request result
+
+  if test_local:
+    vllm_url = "http://localhost:8000/v1/chat/completions"
+    gguf_url = "https://localhost:8888/v1/chat/completions"
+
+  with open("meetings_transcript_batches.json", encoding="utf-8") as f:
+    data = json.load(f)
+  
+  for batch in data:
+    time.sleep(2)
+    contents = data[batch]
+    calculate_prompt_tokens(contents)
+    if request_handle == 'one_by_one':
+      one_request_at_once(contents, type=inference_type, log_result=log_result)
+    else:
+      parallel_requests(contents, type=inference_type, log_result=log_result)
+    print("-" * 50)
