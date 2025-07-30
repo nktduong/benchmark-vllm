@@ -213,9 +213,9 @@ if __name__ == "__main__":
 
   parser.add_argument("--inference-type", type=str, choices=['vllm', 'gguf'], help='Type of inference to use: vllm or gguf', required=True)
   parser.add_argument("--request-handle", type=str, choices=['one_by_one', 'parallel'], help='How to handle requests: one by one or parallel', required=True)
+  parser.add_argument("--transcript-file", type=str, help="Path to the JSON file containing meeting transcripts.", required=True)
   parser.add_argument("--test-local", action='store_true', help='Set to True if testing locally, False for remote server')
   parser.add_argument("--log-result", action='store_true', help='Set to True to log each request result')
-  parser.add_argument("transcripts-file", type=str, help="Path to the JSON file containing meeting transcripts.", required=True)
   args = parser.parse_args()
 
   if args.test_local:
