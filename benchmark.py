@@ -2,6 +2,7 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import time
 import json
+import argparse
 
 gguf_url = "https://boxing-grand-webmaster-pictures.trycloudflare.com/v1/chat/completions"
 vllm_url = "http://100.109.59.128:8000/v1/chat/completions"
@@ -208,12 +209,15 @@ def calculate_prompt_tokens(contents):
   print("Min prompt num_tokens: {}, Max prompt num_tokens: {}".format(min_len, max_len))
 
 if __name__ == "__main__":
-  inference_type = 'gguf' # 'vllm' or 'gguf'
-  request_handle = 'parallel'  # 'one_by_one' or 'parallel'
-  test_local = False # Set to True if testing locally, False for remote server
-  log_result = False # Set to True to log each request result
+  parser = argparse.ArgumentParser(description="Benchmarking script for translation requests.")
 
-  if test_local:
+  parser.add_argument("--inference-type", type=str, choices=['vllm', 'gguf'], help='Type of inference to use: vllm or gguf', required=True)
+  parser.add_argument("--request-handle", type=str, choices=['one_by_one', 'parallel'], help='How to handle requests: one by one or parallel', required=True)
+  parser.add_argument("--test-local", action='store_true', help='Set to True if testing locally, False for remote server')
+  parser.add_argument("--log-result", action='store_true', help='Set to True to log each request result')
+  args = parser.parse_args()
+
+  if args.test_local:
     vllm_url = "http://localhost:8000/v1/chat/completions"
     gguf_url = "http://localhost:8888/v1/chat/completions"
 
@@ -224,8 +228,8 @@ if __name__ == "__main__":
     time.sleep(2)
     contents = data[batch]
     calculate_prompt_tokens(contents)
-    if request_handle == 'one_by_one':
-      one_request_at_once(contents, type=inference_type, log_result=log_result)
+    if args.request_handle == 'one_by_one':
+      one_request_at_once(contents, type=args.inference_type, log_result=args.log_result)
     else:
-      parallel_requests(contents, type=inference_type, log_result=log_result)
+      parallel_requests(contents, type=args.inference_type, log_result=args.log_result)
     print("-" * 50)
