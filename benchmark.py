@@ -215,7 +215,7 @@ if __name__ == "__main__":
 
   if test_local:
     vllm_url = "http://localhost:8000/v1/chat/completions"
-    gguf_url = "https://localhost:8888/v1/chat/completions"
+    gguf_url = "http://localhost:8888/v1/chat/completions"
 
   with open("meetings_transcript_batches.json", encoding="utf-8") as f:
     data = json.load(f)
