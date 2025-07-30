@@ -1,0 +1,113 @@
+Average prompt num_tokens: 32.75
+Min prompt num_tokens: 32, Max prompt num_tokens: 34
+Total generated tokens: 183
+Tokens per second (parallel): 56.25 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 3.253586927021388 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 31.375
+Min prompt num_tokens: 29, Max prompt num_tokens: 35
+Total generated tokens: 188
+Tokens per second (parallel): 257.09 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.7312484320136718 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 33.375
+Min prompt num_tokens: 30, Max prompt num_tokens: 37
+Total generated tokens: 205
+Tokens per second (parallel): 254.93 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.8041443559923209 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 30.875
+Min prompt num_tokens: 30, Max prompt num_tokens: 34
+Total generated tokens: 182
+Tokens per second (parallel): 235.60 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.7724916750157718 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 32.25
+Min prompt num_tokens: 28, Max prompt num_tokens: 37
+Total generated tokens: 189
+Tokens per second (parallel): 215.02 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.8789902699936647 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 32.125
+Min prompt num_tokens: 28, Max prompt num_tokens: 37
+Total generated tokens: 199
+Tokens per second (parallel): 231.03 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.8613501030195039 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 31.5
+Min prompt num_tokens: 28, Max prompt num_tokens: 36
+Total generated tokens: 188
+Tokens per second (parallel): 246.77 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.7618477949872613 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 31.25
+Min prompt num_tokens: 30, Max prompt num_tokens: 35
+Total generated tokens: 172
+Tokens per second (parallel): 254.69 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.6753342330048326 s
+Successfully handled 8 requests.
+--------------------------------------------------
+(translate) namitech@namitech-B760MZ-E-PRO:~/duong/llm$ ./test_vllm.sh 
+None of PyTorch, TensorFlow >= 2.0, or Flax have been found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Average prompt num_tokens: 32.75
+Min prompt num_tokens: 32, Max prompt num_tokens: 34
+Total generated tokens: 183
+Tokens per second (parallel): 53.79 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 3.401882147998549 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 31.375
+Min prompt num_tokens: 29, Max prompt num_tokens: 35
+Total generated tokens: 188
+Tokens per second (parallel): 254.56 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.7385248790087644 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 33.375
+Min prompt num_tokens: 30, Max prompt num_tokens: 37
+Total generated tokens: 205
+Tokens per second (parallel): 252.47 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.8119672510074452 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 30.875
+Min prompt num_tokens: 30, Max prompt num_tokens: 34
+Total generated tokens: 180
+Tokens per second (parallel): 243.93 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.7379264749761205 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 32.25
+Min prompt num_tokens: 28, Max prompt num_tokens: 37
+Total generated tokens: 189
+Tokens per second (parallel): 217.13 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.8704528429952916 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 32.125
+Min prompt num_tokens: 28, Max prompt num_tokens: 37
+Total generated tokens: 197
+Tokens per second (parallel): 238.29 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.8267395200091414 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 31.5
+Min prompt num_tokens: 28, Max prompt num_tokens: 36
+Total generated tokens: 187
+Tokens per second (parallel): 244.01 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.7663600090018008 s
+Successfully handled 8 requests.
+--------------------------------------------------
+Average prompt num_tokens: 31.25
+Min prompt num_tokens: 30, Max prompt num_tokens: 35
+Total generated tokens: 171
+Tokens per second (parallel): 255.86 tokens/s
+Total times to handle 8 requests with 8 concurrent threads: 0.6683338890143204 s
+Successfully handled 8 requests.

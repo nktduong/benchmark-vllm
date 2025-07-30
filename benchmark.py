@@ -215,13 +215,14 @@ if __name__ == "__main__":
   parser.add_argument("--request-handle", type=str, choices=['one_by_one', 'parallel'], help='How to handle requests: one by one or parallel', required=True)
   parser.add_argument("--test-local", action='store_true', help='Set to True if testing locally, False for remote server')
   parser.add_argument("--log-result", action='store_true', help='Set to True to log each request result')
+  parser.add_argument("transcripts-file", type=str, help="Path to the JSON file containing meeting transcripts.", required=True)
   args = parser.parse_args()
 
   if args.test_local:
     vllm_url = "http://localhost:8000/v1/chat/completions"
     gguf_url = "http://localhost:8888/v1/chat/completions"
 
-  with open("meetings_transcript_batches.json", encoding="utf-8") as f:
+  with open(args.transcript_file, encoding="utf-8") as f:
     data = json.load(f)
   
   for batch in data:

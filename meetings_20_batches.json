@@ -1,0 +1,202 @@
+{
+  "batch_1": [
+    "Hôm nay nhóm kỹ thuật đã hoàn tất triển khai bản cập nhật phiên bản mới cho ứng dụng.",
+    "Phòng marketing đề xuất chiến dịch quảng bá sản phẩm mới vào cuối tháng này.",
+    "Trong buổi họp sáng nay, giám đốc đã nhấn mạnh việc cải thiện quy trình chăm sóc khách hàng.",
+    "Bộ phận nhân sự đang xem xét tổ chức khóa đào tạo kỹ năng mềm cho toàn bộ nhân viên.",
+    "Chúng ta cần thống nhất deadline dự án trước ngày thứ Sáu để kịp tiến độ sản xuất.",
+    "Hệ thống server đã bị gián đoạn khoảng 30 phút do sự cố về mạng nội bộ.",
+    "Khách hàng phản hồi tích cực sau khi chúng ta cải tiến giao diện trang chủ.",
+    "Nhóm nghiên cứu đã đề xuất tính năng mới giúp cải thiện hiệu suất sử dụng ứng dụng."
+  ],
+  "batch_2": [
+    "Tỷ lệ giữ chân người dùng tháng này đã tăng 12% so với tháng trước, là kết quả đáng khích lệ.",
+    "Kế hoạch mở rộng thị trường sang khu vực Đông Nam Á đã được thông qua trong cuộc họp chiến lược.",
+    "Nhân viên mới sẽ được phân chia mentor cụ thể để đảm bảo quá trình onboarding hiệu quả.",
+    "Hệ thống thanh toán hiện đã tích hợp ví điện tử MoMo để tăng tiện lợi cho khách hàng.",
+    "Trưởng nhóm QA báo cáo rằng tỉ lệ bug nghiêm trọng đã giảm một nửa sau khi refactor code.",
+    "Cuộc họp với đối tác Nhật diễn ra suôn sẻ, họ quan tâm đến việc đồng phát triển sản phẩm.",
+    "Lịch kiểm thử UAT sẽ được triển khai từ tuần sau và kéo dài trong vòng 5 ngày làm việc.",
+    "Doanh thu quý 2 vượt mục tiêu đề ra 8%, chủ yếu nhờ chiến dịch sale hiệu quả."
+  ],
+  "batch_3": [
+    "Ứng dụng gặp lỗi khi đăng nhập bằng Facebook trên một số thiết bị Android phiên bản cũ.",
+    "Cần bổ sung thêm phần hướng dẫn sử dụng trong app để người dùng dễ tiếp cận tính năng mới.",
+    "Trung tâm hỗ trợ kỹ thuật sẽ làm việc cả cuối tuần để xử lý backlog yêu cầu hỗ trợ.",
+    "Một số khách hàng phàn nàn về tốc độ phản hồi của hệ thống sau khi cập nhật.",
+    "Kế hoạch năm sau sẽ tập trung vào chuyển đổi số và nâng cao trải nghiệm khách hàng.",
+    "Đội phát triển đề xuất rút ngắn thời gian deploy bằng cách tự động hóa khâu kiểm thử.",
+    "Phòng thiết kế đã hoàn tất mockup cho trang chủ mới, mời mọi người góp ý trước thứ Sáu.",
+    "Chúng ta nên cân nhắc áp dụng chính sách thưởng dựa theo hiệu suất làm việc hằng quý."
+  ],
+  "batch_4": [
+    "Nhóm phát triển đề xuất chuyển sang dùng PostgreSQL thay vì MySQL để hỗ trợ truy vấn phức tạp hơn.",
+    "Hợp đồng đối tác với công ty vận chuyển sẽ được gia hạn thêm 6 tháng với điều khoản cải thiện dịch vụ.",
+    "Bộ phận chăm sóc khách hàng sẽ triển khai hệ thống chatbot hỗ trợ 24/7 vào tuần tới.",
+    "Giám đốc kỹ thuật yêu cầu mọi nhóm nộp báo cáo sprint mỗi thứ Hai để theo sát tiến độ.",
+    "Tỷ lệ chuyển đổi từ quảng cáo Google giảm 5% so với tháng trước, cần kiểm tra từ khoá lại.",
+    "Nội dung landing page mới đã hoàn thiện nhưng vẫn cần duyệt lại phần bảo mật form liên hệ.",
+    "Nhân sự đề xuất chương trình thưởng hiệu suất quý cho nhóm làm việc vượt KPI trong 2 tháng liền.",
+    "Nhiều khách hàng phản ánh giao diện app chưa tối ưu trên các thiết bị iPhone đời cũ."
+  ],
+  "batch_5": [
+    "Cuộc thi nội bộ về sáng tạo sản phẩm sẽ diễn ra vào cuối tháng nhằm thúc đẩy tinh thần đổi mới.",
+    "Chúng ta cần thêm dữ liệu từ chiến dịch quảng cáo trước để xây dựng mô hình dự đoán chính xác hơn.",
+    "Dữ liệu từ hệ thống IoT không đồng bộ trong 2 ngày qua, cần kiểm tra đường truyền và bộ thu.",
+    "Nhóm vận hành gặp khó khăn khi triển khai quy trình mới do thiếu tài liệu hướng dẫn cụ thể.",
+    "Nhân viên mới phản ánh rằng họ chưa nhận được tài khoản email công ty sau một tuần làm việc.",
+    "Trưởng phòng yêu cầu các nhóm update Trello hàng ngày để dễ dàng phối hợp liên phòng ban.",
+    "Cần tổ chức buổi huấn luyện về bảo mật thông tin cho toàn công ty trước ngày 15 tháng tới.",
+    "Chiến lược định giá mới sẽ được thử nghiệm với 2 sản phẩm chủ lực trong đợt sale tháng 9."
+  ],
+  "batch_6": [
+    "Đối tác Nhật Bản đề nghị thay đổi điều khoản thanh toán, chúng ta cần xem xét lại hợp đồng ký kết.",
+    "Trạm hậu cần tại Hà Nội đã hoạt động ổn định trở lại sau sự cố mất điện cuối tuần qua.",
+    "Kết quả A/B testing phiên bản giao diện mới cho thấy tỷ lệ giữ chân tăng 6%.",
+    "Cần tối ưu hoá tốc độ tải trang trên mobile vì tỷ lệ truy cập di động chiếm hơn 70%.",
+    "Mục tiêu quý này là giảm tỷ lệ huỷ đơn hàng xuống dưới 2% toàn hệ thống.",
+    "Tài khoản quảng cáo Facebook bị hạn chế, nhóm media đang liên hệ để kháng nghị lại.",
+    "Thời gian đóng gói đơn trung bình hiện nay là 12 phút, cần rút ngắn còn 8 phút để đạt KPI.",
+    "Nhóm dữ liệu đang kiểm tra độ chính xác của mô hình phân loại phản hồi khách hàng."
+  ],
+  "batch_7": [
+    "Bộ phận kế toán sẽ chốt bảng lương tháng 7 vào thứ Tư, đề nghị gửi thông tin điều chỉnh sớm.",
+    "Ứng dụng đã đạt mốc 1 triệu lượt tải sau 3 tháng ra mắt, nhóm marketing cần lên kế hoạch PR.",
+    "Chúng ta nên thử nghiệm công cụ quản lý công việc mới để thay thế phần mềm hiện tại.",
+    "Đợt đánh giá nội bộ sắp tới sẽ tập trung vào hiệu quả quy trình làm việc và giao tiếp liên phòng ban.",
+    "Cần bổ sung chính sách thưởng nóng cho nhóm hoàn thành dự án trước deadline với chất lượng cao.",
+    "Hệ thống báo lỗi tự động hiện đang ghi nhận quá nhiều false positive, cần điều chỉnh threshold.",
+    "Dự báo doanh thu quý tới giảm nhẹ do yếu tố mùa vụ, cần đẩy mạnh chiến dịch khuyến mãi.",
+    "Chi phí vận hành hiện đang vượt ngân sách dự kiến 12%, cần rà soát lại từng hạng mục chi."
+  ],
+  "batch_8": [
+    "Phân tích chỉ số sử dụng tính năng cho thấy phần lớn người dùng không biết đến mục 'ưu đãi'.",
+    "Nhân sự hợp đồng ngắn hạn sẽ kết thúc vào cuối tháng, cần chuẩn bị bàn giao công việc kỹ lưỡng.",
+    "Bộ phận thiết kế cần thêm dữ liệu hành vi người dùng để cải thiện trải nghiệm giao diện sản phẩm.",
+    "Phòng IT sẽ bảo trì hệ thống server từ 22h thứ Bảy đến 6h sáng Chủ Nhật.",
+    "Khách hàng doanh nghiệp yêu cầu chức năng tuỳ chỉnh báo cáo chi tiết theo thời gian.",
+    "Chúng tôi sẽ triển khai thử nghiệm chatbot trả lời tự động trên website vào tuần sau.",
+    "Chính sách làm việc hybrid tiếp tục áp dụng đến hết năm, mọi người nên đăng ký ngày onsite trước.",
+    "Công cụ kiểm tra lỗi chính tả tự động hoạt động chưa ổn định khi xử lý văn bản tiếng Việt."
+  ],
+    "batch_9": [
+    "Bản cập nhật mới khiến một số người dùng gặp lỗi khi tải hình ảnh trong ứng dụng.",
+    "Phòng phát triển cần thời gian thêm để kiểm thử chức năng xuất dữ liệu theo định dạng CSV.",
+    "Tổng đài viên phản ánh rằng lượng cuộc gọi vào giờ cao điểm đang vượt khả năng tiếp nhận.",
+    "Chúng ta nên tổ chức buổi khảo sát nội bộ để đánh giá mức độ hài lòng của nhân viên.",
+    "Hệ thống hiện không gửi được email xác thực do thay đổi cấu hình SMTP chưa đồng bộ.",
+    "Nhóm phát triển sẽ chuyển sang mô hình agile toàn diện trong quý tiếp theo.",
+    "Tài liệu hướng dẫn sử dụng sản phẩm đang được cập nhật thêm phiên bản tiếng Anh và Nhật.",
+    "Chúng ta cần đánh giá lại hiệu quả của đối tác logistic sau ba tháng hợp tác thử nghiệm."
+  ],
+  "batch_10": [
+    "Từ tuần sau sẽ có thay đổi trong cấu trúc báo cáo tuần, mọi nhóm cần cập nhật kịp thời.",
+    "Cần tổ chức thêm buổi đào tạo về kỹ năng giao tiếp cho nhân viên tuyến đầu.",
+    "Một số khách hàng không nhận được mã OTP do nhà mạng giới hạn tin nhắn rác.",
+    "Phòng QA phát hiện lỗi giao diện hiển thị sai trên một số máy tính màn hình lớn.",
+    "Nhóm sản phẩm đang thiết kế lại dashboard chính để thân thiện hơn với người dùng mới.",
+    "Nội dung thông báo bảo trì cần gửi trước 48 giờ theo chính sách dịch vụ.",
+    "Công ty sẽ triển khai hệ thống chấm công bằng vân tay để thay thế máy thẻ từ.",
+    "Chiến dịch quảng cáo TikTok chưa mang lại nhiều chuyển đổi, cần xem xét thay đổi nội dung video."
+  ],
+  "batch_11": [
+    "Bộ phận hỗ trợ kỹ thuật cần thêm nhân sự vào khung giờ tối để xử lý backlog.",
+    "Chúng ta sẽ thử nghiệm chiến dịch referral để tăng lượng người dùng đăng ký mới.",
+    "Cần thêm báo cáo chi tiết lượt click từng nút trong giao diện để phân tích hành vi.",
+    "Một số email marketing bị đánh dấu spam, có thể do tỉ lệ gửi hàng loạt quá cao.",
+    "Nhân viên phản ánh rằng hệ thống quản lý nghỉ phép còn nhiều lỗi khi đăng ký từ xa.",
+    "Ứng dụng sẽ tạm ngưng cập nhật dữ liệu từ 23h để thực hiện bảo trì định kỳ.",
+    "Bộ phận dữ liệu sẽ chuẩn hóa lại tên các trường trong hệ thống kho dữ liệu tập trung.",
+    "Tỉ lệ giữ chân người dùng sau 7 ngày đang thấp hơn kỳ vọng, cần tìm nguyên nhân."
+  ],
+  "batch_12": [
+    "Các nhóm cần hoàn tất OKR quý 3 trước ngày 3/8 để chuẩn bị cho review.",
+    "Đối tác thanh toán quốc tế sẽ ngừng hỗ trợ thẻ Amex trong tuần tới.",
+    "Chức năng tìm kiếm theo từ khóa đang hoạt động không ổn định trên phiên bản iOS.",
+    "Tỉ lệ chuyển đổi từ trial sang premium chỉ đạt 2%, cần xem lại onboarding flow.",
+    "Nội dung thông báo trong ứng dụng cần được cá nhân hoá hơn theo từng đối tượng người dùng.",
+    "Chiến lược giữ chân khách hàng sẽ tập trung vào ưu đãi cá nhân hoá và nhắc nhở định kỳ.",
+    "Nhân sự có yêu cầu làm việc từ xa phải đăng ký trước ít nhất 24 giờ.",
+    "Bảng KPI mới sẽ áp dụng từ đầu quý 4, bổ sung thêm tiêu chí chất lượng đầu ra."
+  ],
+  "batch_13": [
+    "Một số API mới chưa được cập nhật đầy đủ trong tài liệu dành cho nhà phát triển.",
+    "Cần rà soát lại toàn bộ hợp đồng lao động để phù hợp với chính sách mới của công ty.",
+    "Giao diện bảng giá cần được thiết kế lại để phù hợp với nhiều loại màn hình khác nhau.",
+    "Tính năng phân quyền người dùng đã được triển khai xong và sẵn sàng đưa vào hoạt động.",
+    "Cần điều chỉnh quy trình duyệt hợp đồng để rút ngắn thời gian xử lý từ 3 ngày xuống còn 1.",
+    "Khách hàng phản ánh nội dung email chăm sóc chưa phù hợp với hành vi mua sắm thực tế.",
+    "Nhóm sản phẩm đang lên kế hoạch thử nghiệm A/B tính năng tự động gợi ý sản phẩm.",
+    "Bộ phận nội dung cần cập nhật thường xuyên thông tin blog để tăng traffic tự nhiên."
+  ],
+  "batch_14": [
+    "Tính năng theo dõi đơn hàng đang lỗi không cập nhật trạng thái khi đơn giao thất bại.",
+    "Chúng ta cần chuẩn bị bài thuyết trình để báo cáo kết quả dự án trước hội đồng quản trị.",
+    "Phòng truyền thông đề xuất tổ chức một buổi livestream ra mắt sản phẩm vào tuần sau.",
+    "Số lượng đơn huỷ tăng nhẹ sau khi tăng giá vận chuyển, cần xem xét lại mức phí.",
+    "Quy trình onboarding nội bộ sẽ được số hoá bằng hệ thống quản trị nhân sự mới.",
+    "Chúng tôi đang thử nghiệm chatbot có khả năng xử lý câu hỏi về sản phẩm bằng tiếng Anh.",
+    "Nhóm phát triển sẽ tổ chức review code hằng tuần để nâng cao chất lượng phần mềm.",
+    "Chức năng gợi ý tìm kiếm hoạt động chưa ổn định khi nhập tiếng Việt có dấu."
+  ],
+  "batch_15": [
+    "Nên cân nhắc áp dụng chính sách làm việc linh hoạt để nâng cao sự hài lòng của nhân viên.",
+    "Hợp đồng với nhà cung cấp hosting cũ sẽ hết hạn trong vòng 30 ngày nữa.",
+    "Phần lớn lỗi người dùng báo liên quan đến thao tác nhập sai mã giảm giá.",
+    "Mọi nhóm cần nộp kế hoạch làm việc tháng 8 trước ngày 30/7 để tổng hợp.",
+    "Khách hàng yêu cầu bổ sung lựa chọn thanh toán bằng chuyển khoản ngân hàng.",
+    "Bộ phận kỹ thuật sẽ kiểm tra log chi tiết để xác định nguyên nhân lỗi tải trang chậm.",
+    "Nội dung quảng cáo trên các kênh mạng xã hội sẽ được cập nhật theo trend mùa tựu trường.",
+    "Hệ thống gửi tin nhắn push đang bị trễ do giới hạn băng thông máy chủ ở Singapore."
+  ],
+  "batch_16": [
+    "Chúng tôi vừa cập nhật phiên bản mới giúp tăng tốc độ xử lý dữ liệu gấp đôi.",
+    "Bộ phận kiểm thử ghi nhận lỗi tính điểm không đúng khi người dùng sử dụng coupon.",
+    "Cần bổ sung phần FAQ trong ứng dụng để giảm số lượng yêu cầu hỗ trợ cơ bản.",
+    "Nhóm backend đang tách service thanh toán ra thành microservice riêng biệt.",
+    "Các chỉ số hiệu suất đang được theo dõi sát sao để phát hiện bất thường trong thời gian thực.",
+    "Nên tổ chức buổi chia sẻ kinh nghiệm làm việc hiệu quả giữa các nhóm để học hỏi lẫn nhau.",
+    "Ứng dụng sẽ bổ sung dark mode trong bản cập nhật tiếp theo theo yêu cầu người dùng.",
+    "Khách hàng VIP sẽ được trải nghiệm tính năng mới sớm hơn 1 tuần so với người dùng thường."
+  ],
+  "batch_17": [
+    "Chúng ta sẽ dùng dịch vụ CDN mới để cải thiện tốc độ tải trang cho người dùng quốc tế.",
+    "Tổng kết cuối quý sẽ có thêm hạng mục đánh giá sự phối hợp giữa các phòng ban.",
+    "Số lượng sản phẩm tồn kho cần được kiểm kê lại để chuẩn bị cho đợt sale lớn.",
+    "Tỷ lệ chuyển đổi từ banner trang chủ sang trang sản phẩm chính chỉ đạt 1.3%.",
+    "Cần thêm báo cáo phân tích thiết bị người dùng để tối ưu UI tương thích hơn.",
+    "Lượng truy cập từ quảng cáo Instagram tăng mạnh trong 3 ngày gần đây.",
+    "Nhân viên bán hàng được yêu cầu cập nhật CRM ngay sau mỗi cuộc gọi khách hàng.",
+    "Chúng ta sẽ xây dựng hệ thống chấm điểm khách hàng tiềm năng để lọc lead hiệu quả hơn."
+  ],
+  "batch_18": [
+    "Tính năng thông báo ưu đãi sẽ được cá nhân hoá dựa trên hành vi mua hàng gần đây.",
+    "Ứng dụng đang gặp sự cố hiển thị sai đơn vị tiền tệ với người dùng quốc tế.",
+    "Bộ phận kiểm thử đề xuất thêm các trường hợp kiểm tra với dữ liệu biên.",
+    "Một số mã khuyến mãi bị lạm dụng, cần giới hạn theo tài khoản và IP.",
+    "Nhân viên cần hoàn thành khóa đào tạo bảo mật trước ngày hết hạn truy cập hệ thống.",
+    "Nhóm vận hành đề nghị thay đổi nhà cung cấp bao bì để đảm bảo chất lượng khi giao xa.",
+    "Thời gian xử lý đơn hàng trung bình đã giảm 15% sau khi cải tiến quy trình nội bộ.",
+    "Nhóm content đề xuất hợp tác với KOL ngành giáo dục để tăng độ tin cậy sản phẩm."
+  ],
+  "batch_19": [
+    "Bộ phận pháp lý sẽ rà soát toàn bộ chính sách bảo mật trước khi ra mắt sản phẩm tại EU.",
+    "Phòng kỹ thuật sẽ chuyển toàn bộ hệ thống lên cloud AWS trong tháng 9.",
+    "Người dùng phản hồi rằng giao diện thanh toán bị che khuất trên một số thiết bị Android.",
+    "Nội dung email nhắc thanh toán cần được viết lại rõ ràng và thân thiện hơn.",
+    "Thống kê cho thấy người dùng nữ chiếm 65% tổng lượt truy cập hằng ngày.",
+    "Nhóm phát triển đang cân nhắc tích hợp AI vào hệ thống gợi ý sản phẩm.",
+    "Ứng dụng sẽ sớm hỗ trợ đăng nhập bằng vân tay và Face ID cho tiện lợi hơn.",
+    "Tài khoản admin hiện có quyền quá rộng, cần phân quyền lại cho an toàn hơn."
+  ],
+  "batch_20": [
+    "Hợp đồng thuê văn phòng sẽ được gia hạn thêm một năm với mức giá ưu đãi.",
+    "Ứng dụng sẽ thêm ngôn ngữ Hàn Quốc để mở rộng thị trường trong quý tới.",
+    "Nhóm SEO cần cập nhật lại toàn bộ thẻ meta để cải thiện thứ hạng tìm kiếm.",
+    "Dữ liệu từ hệ thống BI cho thấy người dùng truy cập nhiều nhất vào lúc 20h mỗi ngày.",
+    "Chiến dịch email vừa rồi đạt tỷ lệ mở 38%, vượt xa mức trung bình ngành.",
+    "Phòng hỗ trợ sẽ thêm khung chat trực tuyến trên trang sản phẩm.",
+    "Chúng ta cần kiểm thử hiệu suất khi có hơn 1000 người dùng truy cập cùng lúc.",
+    "Tất cả nội dung quảng bá phải được kiểm duyệt pháp lý trước khi phát hành chính thức."
+  ]
+}
