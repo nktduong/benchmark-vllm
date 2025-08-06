@@ -11,20 +11,23 @@ TRANSLATE_TEMPLATE = "Translate the following text to English: {text}"
 
 from transformers import AutoTokenizer
 
-tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen3-8B-AWQ")
+model_type = "openai/gpt-oss-20b"
+tokenizer = AutoTokenizer.from_pretrained(model_type)
 
-SYSTEM_PROMPT = (
-    "You are a translator who are translating the meeting transcript in Vietnamese into English. "
-    "Translate the following Vietnamese text into natural English:\n"
-    "- Do not translate or omit Vietnamese names\n"
-    "- Keep all proper names unchanged.\n"
-    "- Use fluent, grammatically correct English.\n"
-    "- Maintain the original meaning and context.\n /no-think"
-)
+# SYSTEM_PROMPT = (
+#     "You are a translator who are translating the meeting transcript in Vietnamese into English. "
+#     "Translate the following Vietnamese text into natural English:\n"
+#     "- Do not translate or omit Vietnamese names\n"
+#     "- Keep all proper names unchanged.\n"
+#     "- Use fluent, grammatically correct English.\n"
+#     "- Maintain the original meaning and context.\n /no-think"
+# )
+
+SYSTEM_PROMPT = "You are ChatGPT, a large language model trained by OpenAI.\nKnowledge cutoff: 2024-06\nCurrent date: 2025-08-06\n\nreasoning: low\n\n# Valid channels: analysis, commentary, final. Channel must be included for every message.\nCalls to these tools must go to the commentary channel: 'functions'"
 
 def demo():
   vllm_data = {
-    "model": "Qwen/Qwen3-8B-AWQ",
+    "model": model_type,
     "messages": [
       {"role": "user", "content": "Give me a short introduction to large language models./no-think"}
     ],
@@ -41,7 +44,7 @@ def demo():
 def make_request(content, type = 'vllm'):
     prompt = TRANSLATE_TEMPLATE.replace("{text}", content)
     data = {
-    "model": "Qwen/Qwen3-8B-AWQ",
+    "model": model_type,
     "messages": [
       {"role": "system", "content": SYSTEM_PROMPT},
       {"role": "user", "content": prompt}
